@@ -1,0 +1,349 @@
+/* reset  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color:#183b56;
+    --secoundry-text-color:#577592;
+    --accent-color: #2294ed;
+    --padding-inline-section:20px;
+
+}
+
+
+body{
+    font-family: 'Poopins',sans-serif;
+    color: var(--primary-text-color);
+}
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.6rem;
+}
+h3{
+    font-size: 1rem;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: .75rem;
+    color: var(--secoundry-text-color);
+    line-height: 1.8rem;
+
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+
+}
+ /* utility classes */
+
+.small-bold-text{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.container{
+    max-width:1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+.top-banner{
+    background-color: #4fb3d4;
+    background-image: url(graph13.jpg);
+    background-size: 300px;
+}
+.banner-text{
+    color: aliceblue;
+    padding: 20px 30px;
+    text-align: center;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+ul{
+    list-style: none;
+}
+.main-nav img{
+    margin-top:20px;
+}
+.company-logo{
+    width: 200px;
+}
+.hover-links{
+     padding: 10px;
+     justify-content:end ;
+     transition: 0.3s ease-out;
+}
+.hover-links:hover{
+    color: rgb(118, 186, 246);
+}
+.nav-link{
+    flex-basis: 730;
+}
+.main-nav{
+    justify-content: space-between;
+    
+}
+.sing-up{
+    color: rgb(246, 246, 247);
+    /* background-color: rgb(74, 172, 192); */
+    background-image: url(graph13.jpg);
+    border-radius: 4px;
+    border: 2px solid rgb(145, 140, 140);
+    padding: 6px 20px;
+    box-shadow: 0 0 2px var(--secoundry-text-color);
+    transition: 0.4s ease-out;
+    font-weight: 600;
+}
+.sing-in{
+    color: rgb(24, 46, 63);
+    background-color: rgb(250, 251, 252);
+    border-radius: 4px;
+    border: 2px solid rgb(145, 140, 140);
+    padding: 6px 10px;
+    margin-right: 20px;
+    transition: 0.3s ease-out;
+}
+.sing-in:hover{
+    background-color: aliceblue;
+    color: rgb(23, 160, 179);
+}
+.sing-up:hover{
+    background-color: #f5f7f9;
+    color: #e9eef1;
+}
+/* header section */
+header{
+    padding: 50px var(--padding-inline-section) 0;
+    
+}
+
+.header-section{
+    justify-content: center;
+    gap: 100px;
+
+}
+.header-right img{
+     width: 400px;
+}
+.header-left{
+    max-width: 500px;
+   text-align: center;
+}
+.header-left h1{
+    margin-top: 20px;
+
+    
+}
+.header-left p{
+    font-size: 13px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  
+}
+
+/* companies section */
+.companies-header{
+    text-align: center;
+    margin-block: 30px;
+    color: var(--primary-text-color);
+}
+.logos{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    height: 50px;
+}
+/* feather section */
+.features-section{
+    padding: 80px var(--padding-inline-section);
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+.feathrs-header{
+    text-align:center;
+    margin-top: 2pc;
+
+
+}
+.features-card img{
+               height: 150px;
+}
+.features-card{
+    flex-direction: column;
+    gap: 10px;
+    max-width: 30%;
+    text-align: center;
+
+    margin-top: 20px;
+}
+.features-area p{
+    font-size: 12px;
+}
+.features-area{
+    flex: wrap;
+   
+}
+/* big eathure section */
+
+.big-feature-section{
+    padding: 30px var(--padding-inline-section) 0;
+    padding-top: 400px;
+
+}
+.big-feature-container{
+    gap: 40px;
+  
+}
+.feature-img img{
+ width: 400px;
+ box-shadow: #2294ed;
+
+}
+.feathure-discrption{
+ flex-direction: column;
+ align-items: flex-start;
+ padding-bottom: 70px;
+ padding-left: 20px;
+ padding-right: 20px;
+}
+.feathure-discrption h4{
+       color: rgb(194, 193, 192);
+       font-size: 12px;
+       padding-bottom: 10px;
+}
+.feathure-discrption h3{
+    font-size: 20px;
+    padding-bottom: 13px;
+   
+}
+/* examples section */
+/* .feathrs-header{
+    align-items: flex-start;
+  display: flex;
+}
+.examples-area{
+    justify-content: space-between;
+    margin-block: 30px;
+}
+.examples-card{
+    width: 23%;
+    position: relative;
+    min-height: 300px;
+    background-color: rgb(12, 12, 12);
+  background: url(plant.jpg);
+  /* linear-gradient(rgb(0,0,0,0.1) rgb(0,0,0,0.8)) */
+/* }
+.card-text{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: blanchedalmond;
+    font-size: 25px;
+} */ 
+
+
+
+
+/* <!-- big fethure section  addid code for looking goood--> */
+.wrapper{
+height: 4px;
+width: 3px;
+position: relative;
+}
+.wrapper.card{
+   height: 1%;
+   width: 1%;
+   position: absolute;
+   background: #fff;
+}
+.wrapper.card img{
+    height: 2%;
+    width: 1%;
+    object-fit: cover;
+}
+/* html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background: linear-gradient(375deg, #1cc7d0, #2ede98);
+
+} */
+.wrapper.back-face{
+    height: 1px;
+    width: 1px;
+    border-radius: 50%;
+
+
+}
+/* cta-section-container */
+.cta-section-container{
+    flex-direction: column;
+     gap: 20px;
+     color: azure;
+    
+}
+.cta-section{
+    padding: 120px var(--padding-inline-section) 80px;
+    background-color: #183b54;
+}
+
+.cta-section-container p{
+    color: aliceblue;
+    margin: 20px;
+}
+.get-start{
+    background-color: #2294ed;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 5px;
+}
+
+/* footer? section */
+footer{
+    background-color: #ebf2fa;
+}
+.footer-section{
+    justify-content: space-between;
+    flex-direction: column;
+     padding-top: 30px;
+     
+}
+.link-column{
+    flex-direction: column;
+    color: rgb(67, 66, 66);
+    font-size: 10px;
+    align-items:normal;
+}
+.hover-links{
+    color: rgb(101, 94, 94);
+    font-size: 10px;
+   
+}
+.footer-container{
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+/* subfooter */
+.subfooter{
+    background-color: #b9cde4;
+    padding: var(--padding-inline-section);
+
+
+}
+.subfooter-container{
+    justify-content: center;
+    gap: 30px;
+
+}
